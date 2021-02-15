@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FireRovert",
+        "repositoryURL": "https://github.com/salihcnkhy/FireRovert.git",
+        "state": {
+          "branch": "master",
+          "revision": "d46265935cb32353c28605a2b0ae4d57e82a90dd",
+          "version": null
+        }
+      },
+      {
+        "package": "Rovert",
+        "repositoryURL": "https://github.com/salihcnkhy/Rovert_iOS_MVVM_Package.git",
+        "state": {
+          "branch": "master",
+          "revision": "caa2cdc3f52565a354ede7f506448bda4cae7521",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
