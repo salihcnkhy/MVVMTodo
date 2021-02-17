@@ -11,7 +11,7 @@ import Rovert
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    let app = RVTApp<TodoListViewController>()
+    var app: RVTApp<TodoListViewController>?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -19,12 +19,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let scene = (scene as? UIWindowScene) else { return }
-        let navigationController = UINavigationController()
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.windowScene = scene
-        self.window?.rootViewController = navigationController
-        self.window?.makeKeyAndVisible()
-        app.Start(navigationController: navigationController, rootStoryboard: "Main")
+        app = .init(window: window!, scene: scene)
+        app?.Start(rootStoryboard: "Main")
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

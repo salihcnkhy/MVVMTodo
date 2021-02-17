@@ -9,6 +9,5 @@ import Rovert
 import FireRovert
 
 public struct TodoListResponse: RVTResponseProtocol, ResponseProtocol {
-    var title: String
-    var description: String
+   public var responseList: [TodoResponse]
 }

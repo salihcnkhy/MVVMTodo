@@ -8,9 +8,14 @@
 import Rovert
 
 final class TodoListViewModel: RVTViewModel<TodoListUseCase> {
+    
+    public var todoList: RVTBindable<TodoListModel> = .init()
+    
     public func getTodos() {
-        useCase.getTodos { response in
-            print(response)
+        useCase.responseModel.bind { [weak self] model in
+            guard let self = self, let todoList = model as? TodoListModel else { return }
+            self.todoList.value = todoList
         }
+        useCase.getTodos()
     }
 }

@@ -15,6 +15,7 @@
 		59B5100225DACECE008C4790 /* TodoListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B5100125DACECE008C4790 /* TodoListRequest.swift */; };
 		59B510A925DB0213008C4790 /* Rovert in Frameworks */ = {isa = PBXBuildFile; productRef = 59B510A825DB0213008C4790 /* Rovert */; };
 		59B510AB25DB0213008C4790 /* FireRovert in Frameworks */ = {isa = PBXBuildFile; productRef = 59B510AA25DB0213008C4790 /* FireRovert */; };
+		59B510B125DC9814008C4790 /* TodoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B510B025DC9814008C4790 /* TodoResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		59B50FF925DACE97008C4790 /* TodoListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListDataSource.swift; sourceTree = "<group>"; };
 		59B50FFD25DACEC1008C4790 /* TodoListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListResponse.swift; sourceTree = "<group>"; };
 		59B5100125DACECE008C4790 /* TodoListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListRequest.swift; sourceTree = "<group>"; };
+		59B510B025DC9814008C4790 /* TodoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		59B50FF425DACE04008C4790 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				59B510AF25DC9804008C4790 /* Todo */,
 				59B50FF825DACE14008C4790 /* TodoList */,
 			);
 			path = DataSource;
@@ -121,6 +124,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59B510AF25DC9804008C4790 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				59B510B025DC9814008C4790 /* TodoResponse.swift */,
+			);
+			path = Todo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +253,7 @@
 			files = (
 				59B5100225DACECE008C4790 /* TodoListRequest.swift in Sources */,
 				59B50FFE25DACEC1008C4790 /* TodoListResponse.swift in Sources */,
+				59B510B125DC9814008C4790 /* TodoResponse.swift in Sources */,
 				59B50FFA25DACE97008C4790 /* TodoListDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

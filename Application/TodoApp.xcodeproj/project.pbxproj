@@ -19,6 +19,10 @@
 		59B50F9825DACC56008C4790 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59B50F9725DACC56008C4790 /* GoogleService-Info.plist */; };
 		59B5109F25DAF152008C4790 /* TodoNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B5109E25DAF152008C4790 /* TodoNetwork.framework */; };
 		59B510A025DAF152008C4790 /* TodoNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 59B5109E25DAF152008C4790 /* TodoNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		59B510B725DCABC3008C4790 /* TodoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B510B625DCABC3008C4790 /* TodoListModel.swift */; };
+		59B510B925DCABF0008C4790 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B510B825DCABF0008C4790 /* TodoModel.swift */; };
+		59B510BB25DCB3B1008C4790 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B510BA25DCB3B1008C4790 /* TodoCell.swift */; };
+		59B510BD25DCB6FC008C4790 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B510BC25DCB6FC008C4790 /* SpinnerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		59B50F9725DACC56008C4790 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		59B5105825DAD128008C4790 /* TodoNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TodoNetwork.xcodeproj; path = TodoNetwork/TodoNetwork.xcodeproj; sourceTree = "<group>"; };
 		59B5109E25DAF152008C4790 /* TodoNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TodoNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59B510B625DCABC3008C4790 /* TodoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListModel.swift; sourceTree = "<group>"; };
+		59B510B825DCABF0008C4790 /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		59B510BA25DCB3B1008C4790 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
+		59B510BC25DCB6FC008C4790 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,7 @@
 				5973BEEF25DAA55500521226 /* LaunchScreen.storyboard */,
 				5973BEF225DAA55500521226 /* Info.plist */,
 				59B50F9725DACC56008C4790 /* GoogleService-Info.plist */,
+				59B510BC25DCB6FC008C4790 /* SpinnerViewController.swift */,
 			);
 			path = TodoApp;
 			sourceTree = "<group>";
@@ -138,6 +147,8 @@
 				59B50F8125DAB26F008C4790 /* TodoListViewModel.swift */,
 				59B50F8425DAB27A008C4790 /* TodoListUseCase.swift */,
 				59B50F8725DAB285008C4790 /* TodoListRepository.swift */,
+				59B510B625DCABC3008C4790 /* TodoListModel.swift */,
+				59B510BA25DCB3B1008C4790 /* TodoCell.swift */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -145,6 +156,7 @@
 		59B50F7C25DAB23E008C4790 /* TodoDetail */ = {
 			isa = PBXGroup;
 			children = (
+				59B510B825DCABF0008C4790 /* TodoModel.swift */,
 			);
 			path = TodoDetail;
 			sourceTree = "<group>";
@@ -203,8 +215,8 @@
 			);
 			mainGroup = 5973BED825DAA55000521226;
 			packageReferences = (
-				5973BEF925DAA75500521226 /* RemoteSwiftPackageReference */,
-				59B50F7325DAAD90008C4790 /* RemoteSwiftPackageReference */,
+				5973BEF925DAA75500521226 /* XCRemoteSwiftPackageReference "Rovert_iOS_MVVM_Package" */,
+				59B50F7325DAAD90008C4790 /* XCRemoteSwiftPackageReference "FireRovert" */,
 			);
 			productRefGroup = 5973BEE225DAA55000521226 /* Products */;
 			projectDirPath = "";
@@ -258,10 +270,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				59B50F7E25DAB25E008C4790 /* TodoListViewController.swift in Sources */,
+				59B510B925DCABF0008C4790 /* TodoModel.swift in Sources */,
 				59B50F8825DAB285008C4790 /* TodoListRepository.swift in Sources */,
 				59B50F8525DAB27A008C4790 /* TodoListUseCase.swift in Sources */,
+				59B510BD25DCB6FC008C4790 /* SpinnerViewController.swift in Sources */,
+				59B510BB25DCB3B1008C4790 /* TodoCell.swift in Sources */,
 				5973BEE525DAA55000521226 /* AppDelegate.swift in Sources */,
 				5973BEE725DAA55000521226 /* SceneDelegate.swift in Sources */,
+				59B510B725DCABC3008C4790 /* TodoListModel.swift in Sources */,
 				59B50F8225DAB26F008C4790 /* TodoListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,7 +482,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5973BEF925DAA75500521226 /* RemoteSwiftPackageReference */ = {
+		5973BEF925DAA75500521226 /* XCRemoteSwiftPackageReference "Rovert_iOS_MVVM_Package" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/salihcnkhy/Rovert_iOS_MVVM_Package.git";
 			requirement = {
@@ -474,7 +490,7 @@
 				kind = branch;
 			};
 		};
-		59B50F7325DAAD90008C4790 /* RemoteSwiftPackageReference */ = {
+		59B50F7325DAAD90008C4790 /* XCRemoteSwiftPackageReference "FireRovert" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/salihcnkhy/FireRovert.git";
 			requirement = {

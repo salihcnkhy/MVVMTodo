@@ -9,10 +9,12 @@ import Rovert
 import TodoNetwork
 
 final class TodoListRepository: RVTRepository {
+        
+    override func setup() {
+        addSource(key: TodoListDataSource.self)
+    }
     
-    
-    func getTodos(completion: @escaping (TodoListResponse) -> Void ) {
-        viewControllerShared.state.value = .loading
-        TodoListDataSource().getTodoList()
+    func getTodos() {
+        executeSource(key: TodoListDataSource.self)
     }
 }

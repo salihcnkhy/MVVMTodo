@@ -9,10 +9,13 @@ import Rovert
 import FireRovert
 
 public final class TodoListDataSource: RVTDataSource<TodoListRequest, TodoListResponse> {
-        
-    public func getTodoList() {
-        RVTFirestore<TodoListResponse>().getDocument(in: "Todos", named: "DWlDVMV78TTq6APnnRMs") { response in
-            print(response)
+    
+    public override func execute() {
+        RVTFirestore<TodoResponse>().getAll(in: "Todos") { [weak self] wrapper in
+            guard let self = self, wrapper.isSuccess else { return }
+            if let list = wrapper.data as? [TodoResponse] {
+                self.response.value = TodoListResponse(responseList: list )
+            }
         }
     }
 }
