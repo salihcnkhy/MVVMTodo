@@ -22,7 +22,6 @@
 		59B510B725DCABC3008C4790 /* TodoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B510B625DCABC3008C4790 /* TodoListModel.swift */; };
 		59B510B925DCABF0008C4790 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B510B825DCABF0008C4790 /* TodoModel.swift */; };
 		59B510BB25DCB3B1008C4790 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B510BA25DCB3B1008C4790 /* TodoCell.swift */; };
-		59B510BD25DCB6FC008C4790 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B510BC25DCB6FC008C4790 /* SpinnerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +73,6 @@
 		59B510B625DCABC3008C4790 /* TodoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListModel.swift; sourceTree = "<group>"; };
 		59B510B825DCABF0008C4790 /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
 		59B510BA25DCB3B1008C4790 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
-		59B510BC25DCB6FC008C4790 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +124,6 @@
 				5973BEEF25DAA55500521226 /* LaunchScreen.storyboard */,
 				5973BEF225DAA55500521226 /* Info.plist */,
 				59B50F9725DACC56008C4790 /* GoogleService-Info.plist */,
-				59B510BC25DCB6FC008C4790 /* SpinnerViewController.swift */,
 			);
 			path = TodoApp;
 			sourceTree = "<group>";
@@ -273,7 +270,6 @@
 				59B510B925DCABF0008C4790 /* TodoModel.swift in Sources */,
 				59B50F8825DAB285008C4790 /* TodoListRepository.swift in Sources */,
 				59B50F8525DAB27A008C4790 /* TodoListUseCase.swift in Sources */,
-				59B510BD25DCB6FC008C4790 /* SpinnerViewController.swift in Sources */,
 				59B510BB25DCB3B1008C4790 /* TodoCell.swift in Sources */,
 				5973BEE525DAA55000521226 /* AppDelegate.swift in Sources */,
 				5973BEE725DAA55000521226 /* SceneDelegate.swift in Sources */,

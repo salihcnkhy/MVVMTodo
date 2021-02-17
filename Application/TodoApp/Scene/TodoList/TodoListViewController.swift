@@ -16,34 +16,14 @@ final class TodoListViewController: RVTViewController<TodoListViewModel> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Your Todo's"
-        navigationController?.navigationBar.prefersLargeTitles = true
         setupViews()
         bindViewModel()
         viewModel.getTodos()
-       // createSpinnerView()
-    }
-    
-    func createSpinnerView() {
-        let child = SpinnerViewController()
-
-        // add the spinner view controller
-        addChild(child)
-        child.view.frame = view.frame
-        view.addSubview(child.view)
-        child.didMove(toParent: self)
-
-        // wait two seconds to simulate some work happening
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            // then remove the spinner view controller
-            child.willMove(toParent: nil)
-            child.view.removeFromSuperview()
-            child.removeFromParent()
-        }
     }
     
     override func setupViews() {
-        loadingView.frame = UIScreen.main.bounds
+        title = "Your Todo's"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     override func bindViewModel() {
